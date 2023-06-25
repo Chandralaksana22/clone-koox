@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.fixed-buttons {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 9999;
+
+    .button {
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .left-button {
+        width: 180px;
+        background: #215732;
+        height: 90px;
+        padding: 35px 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            fill: #fff;
+            margin-right: 10px;
+        }
+    }
+
+    .right-button {
+        width: 135px;
+        height: 90px;
+        padding: 35px 45px;
+        background: #215732;
+        position: relative;
+
+        .lines,
+        .cross {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            width: 33px;
+            height: 4px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .lines:before,
+        .lines:after,
+        .cross:before,
+        .cross:after {
+            content: "";
+            position: absolute;
+            width: 45px;
+            height: 4px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .lines:before {
+            top: -10px;
+            left: 17px;
+            transform: translateX(-50%);
+        }
+
+        .lines:after {
+            top: 10px;
+            left: 17px;
+            transform: translateX(-50%);
+        }
+
+        .cross {
+            width: 0px;
+            height: 4px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .cross:before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        .cross:after {
+            bottom: 0;
+            transform: rotate(135deg);
+        }
+    }
+
+    .right-button.clicked .lines {
+        transform: rotate(45deg);
+    }
+
+    .right-button.clicked .lines:before {
+        transform: translateY(10px) rotate(-45deg);
+    }
+
+    .right-button.clicked .lines:after {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .right-button.clicked .cross {
+        transform: rotate(45deg);
+    }
+}
+
+.juice-farmacy {
+    background-color: #F0F3F0;
+    background-image: url('bg-pattern.png');
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.rhombus-button {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.rhombus-button::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #225732;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu-content {
+    text-align: center;
+}
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: scroll;
+    background-color: #f0f3f0;
+    background-image: url("bg-pattern.png");
+}
+
+.product-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product:last-child {
+    margin-bottom: -4rem;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product-info {
+    display: flex;
+    margin-right: 11rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 0;
+    max-width: 30rem;
+}
+
+.product-image {
+    margin-right: 11rem;
+    width: 305px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    background-color: transparent; /* Menghilangkan latar belakang */
+}
+
+.detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.detail.active {
+    opacity: 1;
+}
+
+.detail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: #f0f3f0;
+    background-image: url("bg-pattern.png");
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.detail-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7rem;
+    padding-left: 11rem;
+}
+
+.detail-name {
+    margin-bottom: 5px;
+    text-align: left;
+    max-width: 20rem;
+}
+
+
+
+.detail-image {
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+
+.detail-description {
+    text-align: center;
+}
+
+.detail-button {
+    padding: 0.5rem 1rem;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    align-self: flex-start;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
