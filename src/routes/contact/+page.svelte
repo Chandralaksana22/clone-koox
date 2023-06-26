@@ -29,7 +29,7 @@
                 <div class="w-full h-screen pt-60 text-[#225732] flex flex-col items-center">
                     <a  href="mailto:contact@koox.co.uk"
                         class="text-sm lg:text-6xl md:text-4xl sm:text-2xl"
-                        data-aos="slide-down"
+                        data-aos="fade-down"
                        
                     >
                     contact@koox.co.uk

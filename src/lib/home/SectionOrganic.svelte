@@ -20,7 +20,7 @@
 
 <section class="h-screen flex flex-col lg:flex-row-reverse mt-10 mb-10">
     <div class="w-full lg:w-1/2 flex flex-col justify-center items-center">
-        <div class="text-center"  data-aos="slide-down"
+        <div class="text-center"  data-aos="fade-down"
         data-aos-easing="linear"
        >
             <div class="text-center text-[#225732]">
@@ -45,7 +45,7 @@
         <img
             src="apel.png"
             alt="Gambar Apel"
-             data-aos="slide-down"
+             data-aos="fade-down"
         data-aos-easing="linear"
        
             class="md:order-2 w-auto h-80 lg:h-auto object-cover mx-auto"

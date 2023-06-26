@@ -21,14 +21,14 @@
 
 <section
     class="h-screen flex flex-col lg:flex-row-reverse lg:flex-row"
-    data-aos="slide-down"
+    data-aos="fade-down"
     data-aos-easing="linear"
    
     style="height:100vh;"
 >
     <div
         class="w-full lg:w-1/2 flex flex-col justify-center items-center"
-        data-aos="slide-down"
+        data-aos="fade-down"
         data-aos-easing="linear"
        
     >
@@ -46,7 +46,7 @@
     </div>
     <div
         class="w-full lg:w-1/2"
-        data-aos="slide-down"
+        data-aos="fade-down"
         data-aos-easing="linear"
        
     >

@@ -20,7 +20,7 @@
 
 <section
     class="h-screen flex flex-col lg:flex-row-reverse lg:flex-row mt-10 mb-10"
-    data-aos="slide-down"
+    data-aos="fade-down"
     data-aos-easing="linear"
    
 >
