@@ -30,7 +30,7 @@
                     <a
                         href="https://www.ubereats.com/gb/feed?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMldDMUUlMjA3QlMlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKVmYzSDJ5MGJka2dSSnBfUm1vRVNJVlUlMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBNTEuNTIwMDElMkMlMjJsb25naXR1ZGUlMjIlM0EtMC4xMzEyJTdE"
                         class="text-xl lg:text-9xl md:text-4xl sm:text-2xl font-bold link"
-                        data-aos="fade"
+                        data-aos="slide-down"
                         class:selected={hoveredLink === 1}
                         on:mouseenter={() => (hoveredLink = 1)}
                         on:mouseleave={() => (hoveredLink = null)}
@@ -40,7 +40,7 @@
                     <a
                         href="https://deliveroo.co.uk/brands/koox-juice-farmacy"
                         class="text-xl lg:text-9xl md:text-4xl sm:text-2xl font-bold link"
-                        data-aos="fade"
+                        data-aos="slide-down"
                         class:selected={hoveredLink === 2}
                         on:mouseenter={() => (hoveredLink = 2)}
                         on:mouseleave={() => (hoveredLink = null)}
@@ -50,7 +50,7 @@
                     <a
                         href="https://www.just-eat.co.uk/"
                         class="text-xl lg:text-9xl md:text-4xl sm:text-2xl font-bold link"
-                        data-aos="fade"
+                        data-aos="slide-down"
                         class:selected={hoveredLink === 3}
                         on:mouseenter={() => (hoveredLink = 3)}
                         on:mouseleave={() => (hoveredLink = null)}

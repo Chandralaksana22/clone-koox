@@ -110,7 +110,7 @@
                 <div
                     class="product h-screen"
                     on:click={() => toggleDetail(product)}
-                    data-aos="fade"
+                    data-aos="slide-down"
                 >
                     <div class="product-info text-center">
                         <h3
@@ -144,7 +144,7 @@
                     <div
                         class="product-image"
                         style="background-image: url({product.image})"
-                        data-aos="fade"
+                        data-aos="slide-down"
                     />
                 </div>
             {/if}
@@ -186,7 +186,7 @@
                         <div
                             class="product-image-sm mx-auto"
                             style="background-image: url({product.image})"
-                            data-aos="fade"
+                            data-aos="slide-down"
                         />
                         <div class="fixed bottom-0 inset-x-0 overflow-hidden">
                             <div class="w-screen bg-white h-10 mx-auto">
@@ -230,7 +230,7 @@
                     <div
                         class="product-image-sm mx-auto"
                         style="background-image: url({product.image})"
-                        data-aos="fade"
+                        data-aos="slide-down"
                     />
                 </div>
             {/if}

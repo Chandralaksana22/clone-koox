@@ -20,9 +20,9 @@
 
 <section
     class="h-screen flex flex-col lg:flex-row-reverse lg:flex-row mt-10 mb-10"
-    data-aos="fade"
+    data-aos="slide-down"
     data-aos-easing="linear"
-    data-aos-duration="1500"
+   
 >
     <div class="w-full lg:w-1/2 flex flex-col justify-center items-center z-0">
         <div class="text-center text-[#225732]">

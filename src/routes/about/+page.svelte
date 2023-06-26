@@ -30,12 +30,12 @@
                 <div class="w-full h-screen pt-56">
                     <h1
                         class="text-[#225732] text-4xl lg:text-9xl md:text-4xl sm:text-2xl font-bold"
-                        data-aos="fade"
+                        data-aos="slide-down"
                     >
                     100%
                     </h1>
                     <p  class="text-[#225732] text-2xl lg:text-5xl md:text-4xl sm:text-2xl"
-                    data-aos="fade">
+                    data-aos="slide-down">
                     Organic <br>
                     Cold-pressed <br>
                     Raw
@@ -48,12 +48,12 @@
                 <div class="w-full h-screen pt-56">
                     <h1
                         class="text-[#225732] text-4xl lg:text-9xl md:text-4xl sm:text-2xl font-bold"
-                        data-aos="fade"
+                        data-aos="slide-down"
                     >
                    0%
                     </h1>
                     <p  class="text-[#225732] text-2xl lg:text-5xl md:text-4xl sm:text-2xl"
-                    data-aos="fade">
+                    data-aos="slide-down">
                     Additives <br>
                     Pasteurisation <br>
                     HPP
@@ -66,14 +66,14 @@
                 <div class="w-full h-screen pt-56">
                     <h1
                         class="text-[#225732] text-2xl lg:text-5xl md:text-4xl sm:text-2xl"
-                        data-aos="fade"
+                        data-aos="slide-down"
                     >
                     IS THE WHITE SEDIMENT IN MY BOTTLE NORMAL?
                     </h1>
                     <br>
                     <br>
                     <p  class="text-[#225732] text-sm lg:text-5xl md:text-4xl sm:text-2xl"
-                    data-aos="fade">
+                    data-aos="slide-down">
                     Yes ! The white sediment is the gingerol – ginger’s <br> bioactive compound. You will find it in the Ultimate Detox, <br> Dr. Green, Happy Gut and Shield Immunity. <br>
                     <br>
                     It is super good for you, so shake the bottle well
