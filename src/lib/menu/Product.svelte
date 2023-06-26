@@ -152,7 +152,7 @@
         <div class="container mx-auto flex flex-col md:hidden pt-24 pb-24">
             {#if activeProduct === product}
                 <div class="detail active relative z-20">
-                    <div class="detail-content">
+                    <div class="detail-content" style="padding: 70px;">
                         <button
                             class="btn btn-square btn-outline absolute top-0 right-[10px] mt-5"
                             style="color: #225732; border-color: #225732; background-color: transparent; transform: rotate(45deg);"
