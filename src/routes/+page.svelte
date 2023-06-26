@@ -10,7 +10,7 @@
 </script>
 
 <Navbar />
-<section class="h-screen container mx-auto w-screen bg-white">
+<section class="h-screen container mx-auto w-screen bg-white lg:container-lg">
     <div class="juice-farmacy">
         <SectionJuice />
         <SectionOrganic />

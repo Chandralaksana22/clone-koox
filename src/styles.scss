@@ -13,7 +13,21 @@ body {
     left: 0;
     right: 0;
 }
+.nav-button {
+    width: 150px;
+    background: #215732;
+    height: 70px;
+    padding: 35px 45px;
+    display: flex;
+    z-index: 50;
+    justify-content: center;
+    align-items: center;
 
+    svg {
+        fill: #fff;
+        margin-right: 10px;
+    }
+}
 .fixed-buttons {
     position: fixed;
     top: 50%;
@@ -123,7 +137,11 @@ body {
         transform: rotate(45deg);
     }
 }
-
+@media (max-width: 1023px) {
+    .fixed-buttons {
+      display: none;
+    }
+  }
 .juice-farmacy {
     background-color: #F0F3F0;
     background-image: url('bg-pattern.png');
@@ -163,7 +181,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
-    z-index: 20;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,14 +201,20 @@ body {
     background-image: url("bg-pattern.png");
 }
 
+
 .product-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
-}
-
+  }
+  
+  @media (max-width: 767px) {
+    .product-section {
+      display: none;
+    }
+  }
 .product {
     display: flex;
     align-items: flex-start;
@@ -235,6 +259,15 @@ body {
     margin-bottom: 10px;
     background-color: transparent; /* Menghilangkan latar belakang */
 }
+.product-image-sm {
+    width: 157px;
+    height: 347px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    background-color: transparent; /* Menghilangkan latar belakang */
+}
 
 .detail {
     position: fixed;
@@ -246,7 +279,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1;
+    z-index: 50;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -267,6 +300,7 @@ body {
     background-image: url("bg-pattern.png");
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 .detail-info {
     display: flex;
@@ -312,4 +346,92 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+}
+
+.footer-btn{
+    .footer-button {
+        width: 135px;
+        height: 30px;
+        padding: 35px 45px;
+        background: #215732;
+        position: relative;
+
+        .lines{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 33px;
+            height: 4px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+        .cross {
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+            width: 33px;
+            height: 4px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .lines:before,
+        .lines:after,
+        .cross:before,
+        .cross:after {
+            content: "";
+            position: absolute;
+            width: 45px;
+            height: 4px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .lines:before {
+            top: -10px;
+            left: 17px;
+            transform: translateX(-50%);
+        }
+
+        .lines:after {
+            top: 10px;
+            left: 17px;
+            transform: translateX(-50%);
+        }
+
+        .cross {
+            width: 0px;
+            height: 4px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .cross:before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        .cross:after {
+            bottom: 0;
+            transform: rotate(135deg);
+        }
+    }
+
+    .footer-button.clicked .lines {
+        transform: rotate(45deg);
+    }
+
+    .footer-button.clicked .lines:before {
+        transform: translateY(10px) rotate(-45deg);
+    }
+
+    .footer-button.clicked .lines:after {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .footer-button.clicked .cross {
+        transform: rotate(45deg);
+    }
 }

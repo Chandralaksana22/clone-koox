@@ -20,68 +20,99 @@
 </script>
 
 <div class="hero h-screen bg-transparent relative mt-10 mb-10">
-  <img
-    src="daun.png"
-    class="absolute left-0 top-[-50px] z-10 h-[243px] w-auto"
+  <div
+    class="absolute top-[8px] lg:top-0 left-0 w-full grid grid-cols-4 gap-4 z-10"
     data-aos="fade-down"
-  />
-  <img
-    src="daun-2.png"
-    class="absolute left-1/2 transform -translate-x-1/2 top-[-20px] z-10 h-[243px] w-auto"
-    data-aos="fade-down"
-  />
-  <img
-    src="daun-3.png"
-    class="absolute right-0 top-[-30px] z-10 h-[273px] w-auto"
-    data-aos="fade-down"
-  />
-  <img
-    src="kue.png"
-    class="absolute left-[500px] transform -translate-x-1/2 top-0 z-10 h-[102px] w-auto"
-    data-aos="fade-down"
-  />
-  <img
-    src="cup.png"
-    class="absolute bottom-[70px] mt-5 left-[-88px] z-10 h-[273px] w-auto"
-    data-aos="fade-down"
-  />
-  <img
-    src="daun-4.png"
-    class="absolute left-[20%] transform -translate-x-1/2 bottom-[100px] z-10 h-[173px] w-auto"
-    data-aos="fade-down"
-  />
-  <img
-    src="abstrak-3.png"
-    class="absolute bottom-[80px] left-[30%] transform -translate-x-1/2 z-10 h-[273px] w-auto"
-    data-aos="fade-down"
-  />
-  <img
-    src="tomat.png"
-    class="absolute bottom-[70px] right-[34%] transform translate-x-1/2 z-10 h-[150px] w-auto"
-    data-aos="fade"
-  />
-  <img
-    src="sendok.png"
-    class="absolute bottom-[50px] right-0 z-10 h-[273px] w-auto"
-    data-aos="fade-down"
-  />
+  >
+    <div>
+      <img
+        src="daun.png"
+        class="z-10 h-auto lg:h-[243px] w-auto"
+        data-aos="fade-down"
+      />
+    </div>
+    <div>
+      <img
+        src="daun-2.png"
+        class="z-10 h-auto lg:h-[243px] w-auto"
+        data-aos="fade-down"
+      />
+    </div>
+    <div>
+      <img
+        src="kue.png"
+        class="z-10 h-auto lg:h-[102px] w-auto"
+        data-aos="fade-down"
+      />
+    </div>
+    <div>
+      <img
+        src="daun-3.png"
+        class="z-10 h-auto lg:h-[273px] w-auto"
+        data-aos="fade-down"
+      />
+    </div>
+  </div>
   <div class="hero-content text-center relative">
-    <div class="w-full">
-      <h1 class="text-[#225732] text-7xl font-bold" data-aos="fade-down">
+    <div class="w-full flex justify-center">
+      <h1
+        class="text-[#225732] text-2xl lg:text-7xl md:text-4xl sm:text-2xl font-bold"
+        data-aos="fade-down"
+      >
         <img
           src="abstrak.png"
           alt="Abstrak"
-          class="inline h-48 w-auto z-10"
+          class="inline h-16 lg:h-48 w-auto z-10"
           data-aos="fade-down"
         />
         Juice Farmacy
         <img
           src="abstrak-2.png"
           alt="Abstrak 2"
-          class="inline h-48 w-auto z-10"
+          class="inline h-16 lg:h-48 w-auto z-10"
           data-aos="fade-down"
         />
       </h1>
+    </div>
+  </div>
+  <div
+    class="absolute bottom-[50px] lg:bottom-0 left-0 w-full grid grid-cols-5 gap-4 z-10"
+    data-aos="fade"
+  >
+    <div>
+      <img
+        src="cup.png"
+        class="z-10 h-auto lg:h-[273px] w-auto"
+        data-aos="fade-down"
+      />
+    </div>
+    <div>
+      <img
+        src="daun-4.png"
+        class="z-10 h-auto lg:h-[173px] w-auto"
+        data-aos="fade-down"
+      />
+    </div>
+    <div>
+      <img
+        src="abstrak-3.png"
+        class="z-10 h-auto lg:h-[273px] w-auto"
+        data-aos="fade-down"
+      />
+    </div>
+    <div>
+      <img
+        src="daun.png"
+        class="z-10 h-auto lg:h-[102px] w-auto"
+        data-aos="fade-down"
+      />
+    </div>
+    <div>
+      <img
+        src="sendok.png"
+        class="z-10 h-auto lg:h-[273px] w-auto"
+        data-aos="fade-down"
+      />
     </div>
   </div>
 </div>

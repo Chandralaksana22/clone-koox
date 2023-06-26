@@ -29,7 +29,7 @@
                 <div class="w-full h-screen pt-56 flex flex-col items-center">
                     <a
                         href="https://www.ubereats.com/gb/feed?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMldDMUUlMjA3QlMlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKVmYzSDJ5MGJka2dSSnBfUm1vRVNJVlUlMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBNTEuNTIwMDElMkMlMjJsb25naXR1ZGUlMjIlM0EtMC4xMzEyJTdE"
-                        class="text-9xl font-bold link"
+                        class="text-xl lg:text-9xl md:text-4xl sm:text-2xl font-bold link"
                         data-aos="fade"
                         class:selected={hoveredLink === 1}
                         on:mouseenter={() => (hoveredLink = 1)}
@@ -39,7 +39,7 @@
                     </a><br />
                     <a
                         href="https://deliveroo.co.uk/brands/koox-juice-farmacy"
-                        class="text-9xl font-bold link"
+                        class="text-xl lg:text-9xl md:text-4xl sm:text-2xl font-bold link"
                         data-aos="fade"
                         class:selected={hoveredLink === 2}
                         on:mouseenter={() => (hoveredLink = 2)}
@@ -49,7 +49,7 @@
                     </a> <br />
                     <a
                         href="https://www.just-eat.co.uk/"
-                        class="text-9xl font-bold link"
+                        class="text-xl lg:text-9xl md:text-4xl sm:text-2xl font-bold link"
                         data-aos="fade"
                         class:selected={hoveredLink === 3}
                         on:mouseenter={() => (hoveredLink = 3)}

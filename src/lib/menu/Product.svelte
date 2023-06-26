@@ -61,7 +61,9 @@
                 <div class="detail active" data-aos="fade-in">
                     <div class="detail-content">
                         <div class="detail-info z-40">
-                            <h3 class="product-name text-[#225732] text-5xl">
+                            <h3
+                                class="product-name text-[#225732] text-sm lg:text-5xl md:text-4xl sm:text-2xl"
+                            >
                                 {product.name}
                             </h3>
                             <button
@@ -111,7 +113,9 @@
                     data-aos="fade"
                 >
                     <div class="product-info text-center">
-                        <h3 class="product-name text-[#225732] text-5xl">
+                        <h3
+                            class="product-name text-[#225732] text-sm lg:text-5xl md:text-4xl sm:text-2xl"
+                        >
                             {product.name}
                         </h3>
                         <div class="button-container mx-auto">
@@ -137,7 +141,6 @@
                             </button>
                         </div>
                     </div>
-
                     <div
                         class="product-image"
                         style="background-image: url({product.image})"
@@ -146,5 +149,91 @@
                 </div>
             {/if}
         </section>
+        <div class="container mx-auto flex flex-col md:hidden pt-24 pb-24">
+            {#if activeProduct === product}
+                <div class="detail active relative z-20">
+                    <div class="detail-content">
+                        <button
+                            class="btn btn-square btn-outline absolute top-0 right-[10px] mt-5"
+                            style="color: #225732; border-color: #225732; background-color: transparent; transform: rotate(45deg);"
+                            on:click={() => toggleDetail(product)}
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                        </button>
+                        <h3
+                            class="product-name text-[#225732] mt-[70px] text-2xl lg:text-5xl md:text-4xl sm:text-2xl"
+                        >
+                            {product.name}
+                        </h3>
+                        <p
+                            class="product-name text-[#225732] mt-[70px] text-md lg:text-5xl md:text-4xl sm:text-2xl"
+                        >
+                            {product.price}
+                        </p>
+                        <div
+                            class="product-image-sm mx-auto"
+                            style="background-image: url({product.image})"
+                            data-aos="fade"
+                        />
+                        <div class="fixed bottom-0 inset-x-0 overflow-hidden">
+                            <div class="w-screen bg-white h-10 mx-auto">
+                                <h2 class="card-title text-sm text-center mx-auto p-3 text-[#225732]">
+                                    {product.description}
+                                  </h2>                                  
+                            </div>
+                          </div>
+                          
+                    </div>
+                </div>
+            {:else}
+                <div class="flex flex-col items-center">
+                    <h3
+                        class="product-name text-[#225732] text-sm lg:text-5xl md:text-4xl sm:text-2xl"
+                    >
+                        {product.name}
+                    </h3>
+                    <div>
+                        <button
+                            class="btn btn-square btn-outline mt-10 mb-10"
+                            style="color: #225732; border-color: #225732; background-color: transparent; transform: rotate(45deg);"
+                            on:click={() => toggleDetail(product)}
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="product-image-sm mx-auto"
+                        style="background-image: url({product.image})"
+                        data-aos="fade"
+                    />
+                </div>
+            {/if}
+        </div>
     {/each}
 </div>
