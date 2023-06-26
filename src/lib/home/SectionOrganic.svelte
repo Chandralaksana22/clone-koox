@@ -18,9 +18,11 @@
     });
 </script>
 
-<div class="h-screen flex flex-col lg:flex-row-reverse mt-10 mb-10">
+<section class="h-screen flex flex-col lg:flex-row-reverse mt-10 mb-10">
     <div class="w-full lg:w-1/2 flex flex-col justify-center items-center">
-        <div class="text-center" data-aos="fade-down">
+        <div class="text-center"  data-aos="fade"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <div class="text-center text-[#225732]">
                 <h1 class="text-md font-bold">. 02 .</h1>
                 <h1
@@ -43,8 +45,10 @@
         <img
             src="apel.png"
             alt="Gambar Apel"
-            data-aos="fade-down"
+             data-aos="fade"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
             class="md:order-2 w-auto h-80 lg:h-auto object-cover mx-auto"
         />
     </div>
-</div>
+</section>

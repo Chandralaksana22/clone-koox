@@ -18,20 +18,26 @@
     });
 </script>
 
-<div
-    class="h-screen flex flex-col  lg:flex-row-reverse lg:flex-row mt-10 mb-10"
-    data-aos="fade-down"
+<section
+    class="h-screen flex flex-col lg:flex-row-reverse lg:flex-row mt-10 mb-10"
+    data-aos="fade"
+    data-aos-easing="linear"
+    data-aos-duration="1500"
 >
     <div class="w-full lg:w-1/2 flex flex-col justify-center items-center z-0">
         <div class="text-center text-[#225732]">
             <span class="text-md font-bold">. 04 .</span>
             <br />
-            <span class="text-2xl lg:text-5xl md:text-4xl sm:text-2xl">Unpasteurised</span>
+            <span class="text-2xl lg:text-5xl md:text-4xl sm:text-2xl"
+                >Unpasteurised</span
+            >
             <br />
-            <span class="text-2xl lg:text-5xl md:text-4xl sm:text-2xl">No HPP</span>
+            <span class="text-2xl lg:text-5xl md:text-4xl sm:text-2xl"
+                >No HPP</span
+            >
         </div>
     </div>
     <div class="w-full lg:w-1/2">
         <img src="pisau.png" alt="Tomato" class="w-full z-20" />
     </div>
-</div>
+</section>

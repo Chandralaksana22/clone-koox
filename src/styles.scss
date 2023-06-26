@@ -7,6 +7,10 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+:global(body) {
+    height: 100vh;
+}
+
 .footer {
     position: fixed;
     bottom: 0;

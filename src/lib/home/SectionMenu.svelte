@@ -21,21 +21,27 @@
     }
 </script>
 
-<div class="hero h-screen bg-transparent relative mt-10 mb-10">
+<section class="hero h-screen bg-transparent relative mt-10 mb-10">
     <img
         src="jeruk.png"
         class="absolute left-0 top-[60px] h-[92px] lg:h-[243px] w-auto"
-        data-aos="fade-down"
+        data-aos="fade"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
     />
     <img
         src="daun-3.png"
         class="absolute right-0 top-[-30px] h-[208px] lg:h-[273px] w-auto"
-        data-aos="fade-down"
+        data-aos="fade"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
     />
     <img
         src="abstrak-3.png"
         class="absolute bottom-[80px] left-[30%] transform -translate-x-1/2 h-[208px] lg:h-[273px] w-auto"
-        data-aos="fade-down"
+        data-aos="fade"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
     />
     <img
         src="bawang.png"
@@ -45,14 +51,26 @@
     <img
         src="daun-5.png"
         class="absolute bottom-[50px] right-0 h-[150px] lg:h-[273px] w-auto"
-        data-aos="fade-down"
+        data-aos="fade"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
     />
     <div class="hero-content text-center relative">
         <div class="w-full">
-            <h1 class="text-[#225732] text-2xl lg:text-5xl md:text-4xl sm:text-2xl font-bold" data-aos="fade-down">
+            <h1
+                class="text-[#225732] text-2xl lg:text-5xl md:text-4xl sm:text-2xl font-bold"
+                data-aos="fade"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+            >
                 Menu
             </h1>
-            <p class="text-[#225732] text-md" data-aos="fade-down">
+            <p
+                class="text-[#225732] text-md"
+                data-aos="fade"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+            >
                 Discover Now
             </p>
             <button
@@ -76,4 +94,4 @@
             </button>
         </div>
     </div>
-</div>
+</section>
